@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "authors": [
+    "benedictolopez <31680925+benedictolopez@users.noreply.github.com>"
+  ],
+  "description": "is example of boostrap",
+  "main": "bower",
+  "keywords": [
+    "123"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "^4.1.1",
+    "fontawesome": "^5.0.12",
+    "jquery": "^3.3.1"
+  }
+}
