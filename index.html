@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Up and running with Bootstrap 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="bower_components/boostrap/dist/css/bootstrap.css">
@@ -123,13 +124,15 @@
 <script type="text/javascript" src="bower_components/hammerjs/hammer.js"></script>
 <script type="text/javascript">
         var $body = document.body;
+        var $navBar = document.getElementById("navigation");
         var gestures = new Hammer($body);
+
         gestures.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-        gestures.on('swipeleft', function(ev) {
-	        console.log(ev);
+        gestures.on('swipeup', function(ev) {
+	        $navBar.click();   
         });
-        gestures.on('swiperight', function(ev) {
-	        console.log(ev);
+        gestures.on('swipedown', function(ev) {                
+                $navBar.click();
         });
 </script>
 </html>
